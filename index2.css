@@ -1,0 +1,403 @@
+*{
+    box-sizing: border-box;
+}
+@media (max-width: 720px){
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    nav a{
+        font-weight: 600;
+        padding-right: 20px;
+    }
+    
+    nav a:hover{
+        color: rgb(45, 114, 158);
+    }
+    
+    header{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 90px;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img{
+        height: 90px;
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    .buttons {
+        min-width: 200px;
+        display: flex;
+        justify-content: space-around;
+    }
+      
+    .buttons a {
+        text-decoration: none;
+        font-size: 28px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background: #314652;
+        color: #f1f1f1;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        transition: all .4s ease-in-out;
+    }
+      
+    .buttons a:hover {
+        transform: scale(1.2);
+    }
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(63, 177, 226) }
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 0)
+    ),url("fondodeagua.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+    font-family: serif;
+}
+
+
+#somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-programas{
+    background-color: rgb(26, 97, 117);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 150px 12px;
+}
+
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    font-family: serif;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0,0,0,0.5)
+    )
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 10px 12px;
+}
+
+#caracteristicas h3{
+    font-family: serif;
+}
+
+#caracteristicas li{
+    margin: 15px -150px;
+    font-weight: bold;
+}
+
+#maps .container h2{
+    text-align: center;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(45, 94, 120);
+    color: white;
+    height: 50vh;
+}
+
+footer{
+    background-color: rgb(45, 94, 120);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+}
+
+footer .container{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    nav a{
+        font-weight: 600;
+        padding-right: 40px;
+    }
+    
+    nav a:hover{
+        color: rgb(75, 148, 194);
+    }
+    
+    header{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 90px;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        padding: 10px;
+    }
+
+    
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img{
+        height: 90px;
+        width: 200px;
+    }
+
+    #somos-proya .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-proya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-proya h2{
+        margin-top: 0px;
+    }
+
+    #somos-proya .img-container{
+        background-image: url("LOGO1.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 450px;
+        width: 500px; 
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h2{
+        font-size: 4em;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta{
+        padding: 50px;
+        background-size: 100% 180px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(79, 79, 79);
+        box-shadow: 2px 2px 10px rgba(60, 60, 60, 0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+    }
+
+    #caracteristicas{
+        background-image: url("media/background-2.jpeg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+        font-family: sans-serif;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #maps .container h2{
+        text-align: initial;
+    }
+
+    .buttons {
+        min-width: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+      
+    .buttons a {
+        text-decoration: none;
+        font-size: 28px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background: #314652;
+        color: #f1f1f1;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        transition: all .4s ease-in-out;
+        display: inline-block;
+    }
+      
+    .buttons a:hover {
+        transform: scale(1.2);
+    }
+
+    #final h2{
+        font-family: serif;
+        margin-bottom: 100px;
+    }
+
+    #final{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(45, 94, 120);
+        color: white;
+        height: 50vh;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+         background-position-x: calc(100vw - 800px);
+    }
+}
